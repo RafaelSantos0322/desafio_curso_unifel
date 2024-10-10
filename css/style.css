@@ -1,0 +1,30 @@
+@import url('header.css');
+@import url('main.css');
+@import url('sections.css');
+@import url('footer.css');
+
+@font-face {
+    font-family: Breathing;
+    src: url(../fonts/Breathing.ttf) format('truetype');
+}
+html, body {
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    background-color: #d9d9d9;
+
+}
+#texto_logo, #texto_logo > span {
+    font-family: Breathing;
+    color: rgb(189, 144, 20);
+    font-size: 22px;
+}
+#texto_logo > span{
+    color: #ce5959;
+}

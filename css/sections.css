@@ -1,0 +1,62 @@
+#ingredientes, #materiais, #preparo{
+    width: 75%;
+    margin: 0px auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+#preparo #time{
+    margin: 10px;
+    color: #572a12;
+}
+.subtitle{
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(to right,  #572a12, rgb(189, 144, 20), #d9d9d9);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    letter-spacing: 2pt;
+    line-height: 2em;
+    border-radius: 10px;
+}
+.subtitle > span{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+#lista_ingredientes, #lista_materiais, #passos_preparo{
+    display: grid;
+    grid-template-columns: repeat(1, 6fr); 
+}
+.ingrediente_item, .materiais_item, .passo_preparo{
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.passo_preparo > span{
+    display: inline-block;
+    margin-right: 10px;
+    border:rgb(234, 112, 18) 1px solid ;
+    padding: 5px;
+    border-radius: 50%;
+    color:  #8c3a0e;
+}
+@media screen and (max-width: 1170px) {
+    #ingredientes, #materiais, #preparo{
+        width: 95%;
+    }
+
+    .subtitle{
+        font-size: .9em;
+    }
+    .subtitle > span {
+        font-size: .8em;
+    }
+    #lista_materiais{
+        display: grid;
+        grid-template-columns: repeat(2, 6fr); /* 2 colunas com 6 espaços cada */
+    }
+}

@@ -1,0 +1,38 @@
+main {
+    text-align: center;
+    width: 80%;
+    margin: 5px auto;
+    margin-bottom: 20px;
+}
+#titulo_principal{
+    margin: 20px 0px 10px 0px;
+    font-size: 50px;
+    color: rgb(189, 144, 20);
+    text-shadow: 1px 1px 1px black;
+}
+#avaliacoes{
+    display: flex;
+    justify-content: center;
+}
+#estrelas{
+    margin-right: 10px;
+}
+#estrelas > i {
+    text-shadow: 1px 1px 1px black;
+}
+#qtd_avaliacao{
+    margin-top: 3px;
+}
+#img_principal{
+    margin-top: 20px;
+    width: 40%;
+    min-width: 300px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.455);
+    object-fit: fill;
+}
+@media screen and (max-width: 1170px) {
+    #titulo_principal{
+        font-size: 1.7em;
+    }
+}
